@@ -4,12 +4,12 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "./docs"),
+    path: path.resolve(__dirname, "./public"),
     filename: "index_bundle.js",
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   devServer: {
-    contentBase: path.join(__dirname, "docs"),
+    contentBase: path.join(__dirname, "public"),
     open: true,
     port: 3000,
     proxy: {
