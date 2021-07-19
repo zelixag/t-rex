@@ -19,6 +19,6 @@
   },
   "scripts": {
     "start": "webpack serve --mode development --devtool inline-source-map --hot",
-    "build": "webpack"
+    "build": "yarn && webpack"
   }
 }
